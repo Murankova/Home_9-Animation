@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.block {
+  position: relative;
+  height: 43.5rem;
+  
+  background: linear-gradient(#004cf2 0%,#00b7ea 100%);
+  animation-name: block-animation;
+  animation-duration: 20s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+@keyframes block-animation {
+  0% {
+    background: linear-gradient(#1a4182 0%,#ef6d56 100%);
+  }
+
+  25% {
+    background: linear-gradient(#164dbd 0%,#f27900 100%);
+  }
+
+  50% {
+    background: linear-gradient(#004cf2 0%,#00b7ea 100%);
+  }
+
+  75% {
+    background: linear-gradient(#004cf2 0%,rgb(211, 140, 34) 100%);
+  }
+  100% {
+    background: linear-gradient(#1a4182 0%,#ef6d56 100%);
+  }
+
+
+}
+
+.block__element {  
+  animation-name: element-animation;
+  animation-duration: 20s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  left: 0; 
+
+  width: 100px;
+  height: 100px;
+
+  margin-left: auto;
+  margin-right: auto; 
+  
+  border-radius: 50%;
+
+  top: 500px;
+
+  box-shadow: 0px 0px 20px rgba(188, 193, 52, 0.5);
+
+  z-index: 2;
+}
+  
+@keyframes element-animation {
+  0% {
+    background-color: #842d17;
+    box-shadow: 0px 0px 20px rgba(188, 193, 52, 0.5);
+    z-index: 2;
+
+    left: 0;
+    top: 500px;
+  }
+
+  25% {
+    background-color: #b1bd10;
+    box-shadow: 0px 0px 20px rgba(188, 193, 52, 0.6);
+    z-index: 2;
+
+    left: 325px;
+    top: 275px;
+  }
+
+  50% {
+    background-color: yellow;
+    box-shadow: 0px 0px 30px rgb(255, 255, 0, 1);
+    z-index: 2;
+
+    top:30px;
+    left: 640px;
+  }
+
+  75% {
+    background-color: rgb(209, 199, 18);
+    box-shadow: 0px 0px 20px rgba(209, 199, 18, 0.6);
+    z-index: 2;
+
+    top:275px;
+    left: 1000px;
+
+  }
+
+  100% {
+    background-color: rgba(210, 157, 22, 0.824);
+    box-shadow: 0px 0px 18px rgba(239, 220, 10, 0.5);
+    z-index: 2;
+
+    left: 1280px;
+    top: 500px;
+  }
+}
+
+.block__grass {
+  position: absolute;
+  top: 400px;
+
+
+ content: url(../img/Grass.svg);
+
+ z-index: 5;
+}
